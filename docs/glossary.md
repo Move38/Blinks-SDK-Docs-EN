@@ -2,13 +2,13 @@
 [Blinks API Reference](api.md) - full API reference
 
 ## Display
-- setColor(color)
-- setFaceColor(face, color)
+- setColor()
+- setColorOnFace()
 
 ## Colors
-- makeColorRGB(red,green,blue)
-- makeColorHSB(hue,sat,bri)
-- dim(color, value)
+- makeColorRGB()
+- makeColorHSB()
+- dim()
 
 ## Defined Colors
 RED, ORANGE, YELLOW, GREEN, CYAN, BLUE, MAGENTA, WHITE, OFF
@@ -24,16 +24,16 @@ RED, ORANGE, YELLOW, GREEN, CYAN, BLUE, MAGENTA, WHITE, OFF
 - buttonDown()
 
 ## Communication
-- setValueSentOnAllFaces(value)
-- setValueSentOnFace(value, face)
-- getLastValueReceivedOnFace(face)
-- isValueReceivedOnFaceExpired(face)
-- didValueOnFaceChange(face);
-- isAlone();
+- setValueSentOnAllFaces()
+- setValueSentOnFace()
+- getLastValueReceivedOnFace()
+- isValueReceivedOnFaceExpired()
+- didValueOnFaceChange()
+- isAlone()
 
 ## Time
 - millis()
-- Timer.set(duration)
+- Timer.set()
 - Timer.isExpired()
 - Timer.getRemaining()
 
