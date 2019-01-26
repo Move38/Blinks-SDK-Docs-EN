@@ -6,19 +6,12 @@ setColor(color)
 setFaceColor(face, color)
 
 ## Colors
-makeColorRGB(red, green, blue) - values[0-255]
-makeColorHSB(hue, saturation, brightness) - values[0-255]
-dim(color, value) - values[0-255]    
+makeColorRGB(red,green,blue)
+makeColorHSB(hue,sat,bri)
+dim(color, value)
 
-RED    
-ORANGE 
-YELLOW 
-GREEN   
-CYAN    
-BLUE    
-MAGENTA 
-WHITE   
-OFF
+## Defined Colors
+RED, ORANGE, YELLOW, GREEN, CYAN, BLUE, MAGENTA, WHITE, OFF
 
 ## Button
 buttonPressed()
