@@ -25,7 +25,7 @@
 
 ## Needed Software
 - Arduino IDE - [Download it here](https://www.arduino.cc/en/Main/Software)
-- Blinks Library - [Download it here](https://github.com/Move38/Blinks-SDK/releases/tag/v0.9.3-beta)
+- Blinks Library - [Download it here](https://github.com/Move38/Blinks-SDK/releases/tag/v0.9.4-beta)
 
 *If you want to have the latest and contribute to the development of Blinks, here’s our [Github Repo](https://github.com/Move38/Blinks-SDK/tree/dev)
 
