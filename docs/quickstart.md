@@ -88,7 +88,7 @@ The Service Port is by no means necessary, but is a phenomenal tool for debuggin
 3. click on `Tools` in your menu bar, and navigate down to `Port:`  you should now see `COM3` on a PC and `/dev/cu...` on a Mac. Select it.
 4. press the magnifying glass in the top right corner of the Arduino IDE to open the Serial Monitor
 
-Note: The serial port is at a fixed 500k baud rate (set it in the drop-down).
+Note: The serial port is at a fixed 1,000,000 baud rate (set it in the drop-down).
 
 To write to the Serial port from a sketch,
 
