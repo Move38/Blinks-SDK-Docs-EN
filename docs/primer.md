@@ -4,7 +4,7 @@ This list is by no means exhaustive and each of the mechanics, categories, and s
 ## Mechanics
 ### Fracture
 
-Taking Blinks out of the middle of a pack is difficult, it is surrounded by magnets, so instead, we created Fracture (credit to Mike Lazer-Walker for this mechanic). Break the board of Blinks into two halves (of any size, 6 & 6, or 1 & 11) and then translate, rotate, and put them back together.
+Taking Blinks out of the middle of a pack is difficult, it is surrounded by magnets, so instead, we created Fracture (credit to [Em Lazer-Walker](https://lazerwalker.com/) for this mechanic). Break the board of Blinks into two halves (of any size, 6 & 6, or 1 & 11) and then translate, rotate, and put them back together.
 
 
 ### Hinge (rotation)
