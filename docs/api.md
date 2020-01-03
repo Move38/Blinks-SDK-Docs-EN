@@ -136,6 +136,10 @@ bool Timer.isExpired();
 //   // the set duration has passed
 // }
 
+long Timer.getRemaining();
+// Returns the time remaining on the timer in milliseconds
+// Returns 0 when timer is expired
+
 void never();
 // set the timer to never expire, like this:
 // Timer.myTimer;
@@ -163,6 +167,17 @@ FOREACH_FACE(f) {
 
 COUNT_OF(array);
 // pass this function an array and it will returns number of elements in the array
+
+byte sin8_C(byte);
+// pass it values from 0 - 255
+// it returns values from 0 - 255 - 0 in a sin pattern
+
+byte map(value, input_min, input_max, output_min, output_max);
+// map will translate the value from the input scale to the output scale
+// for instance, if you called map( 1, 0, 2, 0, 4) you would get 2
+// because the 1's position between 0 and 2 is equivalent to 2's position between 0 and 4
+// minimums must be smaller than maximums in both input and output
+// this function cannot be used to map things in reverse by reversing those values
 ```
 
 ## Constants
@@ -184,6 +199,11 @@ COUNT_OF(array);
 ```
 uint16_t random( uint16_t limit );
 // Return a random number between 0 and limit inclusive.
+
+void randomize();
+// Seeds the random number generator
+// If you don't call this, your random calls will be
+// the same each time you reinstall the game
 
 byte getSerialNumberByte( byte n );
 // Read the unique serial number for this blink tile
