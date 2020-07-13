@@ -75,6 +75,29 @@ Please feel free to ask about features, and if I didn't cover something that is 
   - Slightly more verbose version [here](api.md)
   - Full API [here](https://github.com/Move38/Move38-Arduino-Platform)
 
+## Pre-defined Functions
+
+Each Blink has a few built-in features for convinience.
+
+### Code Sharing
+
+Rather than program a sketch onto each individual tile, a Blink that has already been programmed can share it's code with neighboring tiles.  Don't worry, this code is stored in flash - it won't overwrite anything that's been programmed onto the other Blinks!
+
+1. Ensure the programmed tile is alone, seperated from the other tiles.
+2. Press and hold the tile's button for **6 seconds**, until the tile "glitters" blue.
+3. Connect this tile to the others that you want to share the game with.
+
+As long as all connected tiles are either awake or in a "warm sleep", each tile will establish a link between one of it's neighbors, and all tiles will share the original sketch simultaneously.  *In order for this feature to function properly, please make sure all blinks have the lastest [firmware release](https://github.com/Move38/Blinks-SDK/releases).*
+
+### Sleep & Wake
+
+By default, all Blink tiles will enter a "warm sleep" after *10 minutes of inactivity*.  If a blink is in "warm sleep", it can wake by a single button press or by recieving activity from neighboring blinks. If the Blink is left undisturbed for *another 2 minutes*, however, it will enter a "cold sleep" state, where only a button press can wake it up again.  A Blink will indicate that it is entering sleep mode when it "yawns", or when it displays a deep blue color that fades away.  When a Blink wakes, it "stretches" - displaying a gradually increasing white glow before becoming active.
+
+A blink can also be forced into a warm sleep by holding it's button down for **7 seconds**.  If other tiles are connected to the Blink whose button was held, the other tiles will also enter a warm sleep.
+
+### Error Codes
+
+Occasionally, a Blink may encounter an issue, such as a low battery or an error with it's programming.  When these issues occur, your Blink will display an error code in the form of *red flashes*.  For more information about these error codes and ways to resolve them, visit the [troubleshooting guide](troubleshooting.md).
 
 ## Nerdy Details
 
