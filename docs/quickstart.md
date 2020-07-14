@@ -68,6 +68,26 @@ Check to make sure you have the correct [driver installed](https://learn.adafrui
 For the extra curious, here is the [source code](https://github.com/sparkfun/Pocket_AVR_Programmer/tree/master/Drivers) for that driver.
 
 
+## *Faster Upload Time
+1. Download [this](https://move38.com/attic/blinks/programmers.txt) file (right click and save link as)
+2. Move file to `/Applications/Arduino.app/Contents/Java/hardware/arduino/avr` (it will replace the existing file here)
+3. Restart Arduino if it was open
+4. Now select the `Blinks Programmer` when programming and it should be roughly 4x faster upload speeds ⚡
+
+Not seeing `Blinks Programmer`? Try out [these steps](http://forum.move38.com/t/faster-upload-time-directory-change-and-modified-programmers-txt/83), found by Alpha Blinks Dev, Ken 🙂
+
+
+## Sharing Code with Other Blinks
+
+Rather than using the above method method to transfer code to a tile one-by-one, a Blink that has already been programmed can share it's sketch with neighboring tiles.  This will save a lot of time when ptototyping your own games and programs.
+
+1. Ensure the programmed tile is alone, seperated from the other tiles.
+2. Press and hold the tile's button for **6 seconds**, until the tile "glitters" blue.
+3. Connect this tile to the others that you want to share the game with.
+
+As long as all connected tiles are either awake or in a "warm sleep", each tile will establish a link between one of it's neighbors, and all tiles will share the original sketch simultaneously.  *In order for this feature to function properly, please make sure all blinks have the lastest [firmware release](https://github.com/Move38/Blinks-SDK/releases).*
+
+
 ## Using the Blinks Service Port to talk to or listen to your Blink
 
 The Service Port is by no means necessary, but is a phenomenal tool for debugging code and refining early sketches into robust games. The following steps show you how to use your Blinks Service Port.
