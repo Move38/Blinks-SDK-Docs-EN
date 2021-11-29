@@ -1,4 +1,4 @@
-theme: jekyll-theme-minimal
+remote_theme: pmarsceill/just-the-docs
 
 title: Blinks Developers
 description: Resources for Blinks developers
